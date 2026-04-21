@@ -6,7 +6,7 @@ const projects = [
     },
     {
         title: "Big Bike Philippines Cinematic",
-        tools: "Final Cut Pro / Sound Design",
+        tools: "DaVinci Resolve / Sound Design",
         link: "https://www.tiktok.com/player/v1/7605088650027715861" 
     },
     {
