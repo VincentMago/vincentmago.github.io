@@ -1,4 +1,3 @@
-// The database of your featured work
 const projects = [
     {
         title: "Kawasaki ZX4RR Night Aesthetic",
@@ -39,4 +38,4 @@ projects.forEach(p => {
     `;
 });
 
-console.log("V4RR Portfolio Loaded Successfully.");
+console.log("V4RR Portfolio Loaded Successfully with Profile Picture Update.");
