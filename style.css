@@ -25,16 +25,39 @@ nav {
     display: flex; 
     justify-content: space-between; 
     padding: 40px 0; 
-    align-items: center; 
+    align-items: flex-start; /* Aligns links with the top logo line */
+}
+
+/* Groups the logo and the picture together */
+.brand-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; /* Space between logo and picture */
 }
 
 .logo { 
     font-weight: 700; 
     font-size: 1.4rem; 
     letter-spacing: 2px; 
+    line-height: 1; /* Tighter logo line */
 }
 
 .logo span { color: var(--accent); }
+
+/* The new profile picture styles */
+.profile-pic {
+    width: 60px; /* Small, but not too small */
+    height: 60px;
+    border-radius: 50%; /* Makes it a perfect circle */
+    object-fit: cover; /* Prevents stretching if your photo isn't square */
+    border: 2px solid var(--accent); /* Subtle accent border */
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.3); /* Soft accent glow */
+}
+
+.nav-links {
+    margin-top: 5px; /* Slight alignment boost */
+}
 
 .nav-links a {
     color: var(--text);
