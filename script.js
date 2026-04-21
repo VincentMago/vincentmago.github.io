@@ -1,3 +1,4 @@
+// The database of your featured work
 const projects = [
     {
         title: "Kawasaki ZX4RR Night Aesthetic",
@@ -16,9 +17,10 @@ const projects = [
     }
 ];
 
+// Select the grid from the HTML
 const container = document.getElementById('project-container');
 
-// This function builds your cards automatically
+// Loop through the projects array and generate HTML for each card
 projects.forEach(p => {
     container.innerHTML += `
         <div class="card">
@@ -31,8 +33,10 @@ projects.forEach(p => {
             </div>
             <div class="card-info">
                 <h3>${p.title}</h3>
-                <p>Expertise: ${p.tools}</p>
+                <p><strong>Expertise:</strong> ${p.tools}</p>
             </div>
         </div>
     `;
 });
+
+console.log("V4RR Portfolio Loaded Successfully.");
