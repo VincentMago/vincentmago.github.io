@@ -3,49 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vincent Mago | V4RR Video Editor</title>
+    <title>V4RR MOTO | Video Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="wrapper">
-        <nav>
-            <div class="brand-group">
-                <div class="logo">V4RR<span>MOTO</span></div>
-                <img src="profile.jpg" alt="Vincent Mago Profile" class="profile-pic">
-            </div>
-            <div class="nav-links">
-                <a href="https://www.linkedin.com/in/vincent-mago-0915503b8" target="_blank">LinkedIn</a>
-                <a href="https://www.tiktok.com/@v4rrmoto" target="_blank">TikTok</a>
-                <a href="#contact" class="contact-trigger">Contact</a>
-            </div>
-        </nav>
+    <header>
+        <img src="profile.jpg" alt="Vincent Mago" class="profile-pic">
+        <h1>V4RR MOTO</h1>
+        <p class="subtitle">High-Performance Motorcycle Video Editing</p>
+        <p class="skills">DaVinci Resolve • Premiere Pro • Color Grading • Sound Design</p>
+    </header>
 
-        <header class="hero">
-            <div class="status-tag">Available for Hire</div>
-            <h1>Vincent <span class="accent-text">Mago.</span></h1>
-            <p class="subtitle">Video Editor & Motovlogger</p>
-            <p class="bio">Transforming raw footage into Cinematic Masterpieces. Proficient in <strong>Adobe Premiere Pro,</strong> and <strong>DaVinci Resolve</strong>. I can turn any idea into a visual masterpiece.</p>
-        </header>
+    <section id="portfolio">
+        <h2>Featured Edits</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <h3>ZX4RR Cinematic</h3>
+                <p>High-speed tracking & aggressive sound design.</p>
+            </div>
+            <div class="video-card">
+                <h3>Big Bike PH</h3>
+                <p>Event highlights with dynamic color grading.</p>
+            </div>
+            <div class="video-card">
+                <h3>GS310 Review</h3>
+                <p>Clean cuts, smooth transitions, and engaging pacing.</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="work-section">
-            <h2 class="label">Latest Cuts</h2>
-            <div class="video-grid" id="project-container">
+    <footer id="contact">
+        <h2>Ready for the next project?</h2>
+        <p>Let's talk about your video needs.</p>
+        
+        <button id="openFormBtn" class="email-btn">Start a Project</button>
+    
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/vincent-mago-0915503b8" target="_blank">LinkedIn Profile</a>
+            <a href="https://www.tiktok.com/@v4rrmoto" target="_blank">TikTok Portfolio</a>
+        </div>
+    </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Project Details</h2>
+            <p>Fill this out and I'll get back to you with a quote.</p>
+            
+            <form id="projectForm" action="https://formspree.io/f/xjgzbloe" method="POST">
+                <div class="input-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" required placeholder="Juan Dela Cruz">
                 </div>
-        </section>
+                
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required placeholder="juan@example.com">
+                </div>
 
-        <footer id="contact">
-            <h2>Want your video edited?</h2>
-            <p>Check my Socials for Reference and Contact Me.</p>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vincentmago770@gmail.com&su=Inquiry+from+Portfolio" target="_blank" class="email-btn">
-                Send me a Message
-                </a>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/vincent-mago-0915503b8" target="_blank">LinkedIn Profile</a>
-                <a href="https://www.tiktok.com/@v4rrmoto" target="_blank">TikTok Portfolio</a>
-            </div>
-        </footer>
+                <div class="input-group">
+                    <label>Link to Raw Footage (Drive, WeTransfer, etc.)</label>
+                    <input type="url" name="footage_link" required placeholder="https://drive.google.com/...">
+                </div>
+
+                <div class="input-group">
+                    <label>Video Description & Vision</label>
+                    <textarea name="description" rows="4" required placeholder="Fast-paced moto edit, focus on exhaust sounds, cinematic color grade..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Details to V4RR</button>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
